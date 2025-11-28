@@ -4,6 +4,10 @@ import java.util.Iterator;
 public class Listik implements Iterable<Integer>{
     private ArrayList<Integer> listik;
 
+    public Listik() {
+        this.listik =  new ArrayList<>();
+    }
+
     public int size() {
         return listik.size();
     }
