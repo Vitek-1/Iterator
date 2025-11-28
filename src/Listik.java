@@ -8,6 +8,10 @@ public class Listik implements Iterable<Integer>{
         return listik.size();
     }
 
+    public int get(int index) {
+        return listik.get(index);
+    }
+
 
     public void add(int number){
         listik.add(number);
