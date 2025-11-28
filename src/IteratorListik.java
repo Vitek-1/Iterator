@@ -13,11 +13,12 @@ public class IteratorListik implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        return false;
+        return aktualniIndex > -1;
     }
 
     @Override
     public Integer next() {
-        return 0;
+        aktualniIndex--;
+        return listik.get(aktualniIndex+1);
     }
 }
